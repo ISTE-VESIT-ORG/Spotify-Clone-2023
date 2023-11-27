@@ -1,3 +1,33 @@
+# Day 1
+
+## Installation and React Setup
+- Installation of VSCode and Node.js was left to the attendees as a pre-requisite for the workshop
+- After the installation of VSCode and Node.js, React was setup using [`create-react-app`](https://create-react-app.dev/)
+- The following commands were run in a convenient directory:
+    * `npm i -g create-react-app`
+    * `npx create-react-app frontend`
+    * `cd frontend`
+    * `code .`
+- After setting up React the project was setup in VSCode by installing relevant extensions making editing easier
+- The following extensions were installed:
+    * [ES7+ React/Redux/React-Native snippets](https://marketplace.visualstudio.com/items?itemName=dsznajder.es7-react-js-snippets)
+    * [Prettier - Code formatter](https://marketplace.visualstudio.com/items?itemName=esbenp.prettier-vscode)
+    * [Tailwind CSS IntelliSense](https://marketplace.visualstudio.com/items?itemName=bradlc.vscode-tailwindcss)
+
+## Tailwind CSS
+- Tailwind was setup with React by following the following docs: https://tailwindcss.com/docs/guides/create-react-app
+
+## Sidebar
+ - The Sidebar component was developed in the first day after successful setup of React and Tailwind CSS
+ - Two more components made up the Sidebar component being [`Sidebar/Menu.js`](/src/components/Sidebar/Menu.js) & [`Sidebar/Playlist.js`](/src/components/Sidebar/Playlist.js)
+ - [`Sidebar.js`](/src/components/Sidebar.js) holds the logo and acts as a container for Menu and Playlists components
+ - The Menu component has three items Home, Search & Library
+ - The Playlists component contains a scrollable list of components iterated over using the [map](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/map) method
+ - This marked the end of Day 1 of the workshop
+
+## Progress after Day 1
+![The Sidebar Component](/screenshots/Day1-Sidebar.png)
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
@@ -28,43 +58,3 @@ The build is minified and the filenames include the hashes.\
 Your app is ready to be deployed!
 
 See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
