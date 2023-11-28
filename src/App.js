@@ -1,14 +1,16 @@
-import React from "react";
 import Sidebar from "./components/Sidebar";
+import Bottombar from "./components/Bottombar";
+import SongState from "./context/SongState";
 
-function App() {
+export default function App() {
   return (
     <>
-      <div className="flex h-[calc(100vh-theme(space.24))]">
-        <Sidebar />
-      </div>
+      <SongState>
+        <div className="flex h-[calc(100vh-theme(space.24))]">
+          <Sidebar />
+        </div>
+        <Bottombar />
+      </SongState>
     </>
   );
 }
-
-export default App;
