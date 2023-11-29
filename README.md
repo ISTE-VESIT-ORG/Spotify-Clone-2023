@@ -1,32 +1,26 @@
-# Day 1
+# Day 2
 
-## Installation and React Setup
-- Installation of VSCode and Node.js was left to the attendees as a pre-requisite for the workshop
-- After the installation of VSCode and Node.js, React was setup using [`create-react-app`](https://create-react-app.dev/)
-- The following commands were run in a convenient directory:
-    * `npm i -g create-react-app`
-    * `npx create-react-app frontend`
-    * `cd frontend`
-    * `code .`
-- After setting up React the project was setup in VSCode by installing relevant extensions making editing easier
-- The following extensions were installed:
-    * [ES7+ React/Redux/React-Native snippets](https://marketplace.visualstudio.com/items?itemName=dsznajder.es7-react-js-snippets)
-    * [Prettier - Code formatter](https://marketplace.visualstudio.com/items?itemName=esbenp.prettier-vscode)
-    * [Tailwind CSS IntelliSense](https://marketplace.visualstudio.com/items?itemName=bradlc.vscode-tailwindcss)
+## Context API
 
-## Tailwind CSS
-- Tailwind was setup with React by following the following docs: https://tailwindcss.com/docs/guides/create-react-app
+- Context API was used to pass information of songs to the [`Bottombar/Player.js`](/src/components/Bottombar/Player.js) and proceed accordingly
+- The state is managed through [`SongState.js`](/src/context/SongState.js) and the context is created using [SongContext.js](/src/context/SongContext.js)
+- The following state variables and functions were created and exported through context:
+  - songs, setSongs
+  - currentSong, setCurrentSong
+  - isplaying, setIsplaying
 
-## Sidebar
- - The Sidebar component was developed in the first day after successful setup of React and Tailwind CSS
- - Two more components made up the Sidebar component being [`Sidebar/Menu.js`](/src/components/Sidebar/Menu.js) & [`Sidebar/Playlist.js`](/src/components/Sidebar/Playlist.js)
- - [`Sidebar.js`](/src/components/Sidebar.js) holds the logo and acts as a container for Menu and Playlists components
- - The Menu component has three items Home, Search & Library
- - The Playlists component contains a scrollable list of components iterated over using the [map](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/map) method
- - This marked the end of Day 1 of the workshop
+## Bottombar
 
-## Progress after Day 1
-![The Sidebar Component](/screenshots/Day1-Sidebar.png)
+- The Bottombar component was developed in the second day
+- This involved designing the bottom bar as well as writing the song playing logic
+- Bottombar is composed of another component [`Bottombar/Player.js`](/src/components/Bottombar/Player.js)
+- The Player component contains the styling of the bottom bar of tha page
+- It is also used to fetch and play songs from [`Bottombar/audios.js`](/src/components/Bottombar/audios.js) along with providing additional functionality like skipping to the to next or previous song
+- This marked the end of Day 2 of the workshop
+
+## Progress after Day 2
+
+![The Bottombar Component](/screenshots/Day2-Bottombar.png)
 
 # Getting Started with Create React App
 
