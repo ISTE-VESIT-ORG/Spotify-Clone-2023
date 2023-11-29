@@ -19,7 +19,6 @@
 - This marked the end of Day 2 of the workshop
 
 ## Progress after Day 2
-
 ![The Bottombar Component](/screenshots/Day2-Bottombar.png)
 
 # Getting Started with Create React App
