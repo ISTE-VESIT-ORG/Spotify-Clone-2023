@@ -1,11 +1,16 @@
 # Day 3
 
+## CustomRange Component
+- The primary function of the CustomRange component is to provide a user-friendly interface for seeking through a song's timeline.
+- It plays a crucial role in enhancing the user experience when interacting with an audio player.
+- Through callback functions, such as `onChange`, the CustomRange facilitates seamless integration with the audio element, allowing users to seek to specific positions in the playing song with ease.
+
 ## Voice Modulation
 - Implementing voice modulation using the useVoiceModulation hook from the @specular-aura/voice-modulation library.
 - It is integrated within the Player component to enhance audio playback.
-- Voice modulation for the 'megaphone' effect is implemented which can be triggered by the 'plus' icon button in the Player component.
+- Voice modulation for the `megaphone` effect is implemented which can be triggered by the 'plus' icon button in the Player component.
 
-## Song Item Component
+## SongItem Component
 - The SongItem component renders individual song items with a play button.
 - It interacts with a global song context to handle playing the selected song when the play button is clicked.
 - It accesses the global song context using the useContext hook.
