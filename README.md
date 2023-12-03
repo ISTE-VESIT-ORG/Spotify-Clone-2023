@@ -28,8 +28,8 @@
 
 ## Search Page
 - The handleSearch function is responsible for executing the search logic based on the entered search term.
-- The useState hook is used to manage the state of the search term (searchTerm) and search results (searchResults).
-- findIndex method is used  to search for a matching song in the songs array within the global context.
+- The `useState` hook is used to manage the state of the search term (searchTerm) and search results (searchResults).
+- `findIndex` method is used  to search for a matching song in the songs array within the global context.
 - searchResults state gets updated with the matched songs or an empty array if there are no matches.
 - Results Display Renders a grid of SongItem components for the matched search results.
 - Each SongItem displays relevant information about the song and allows users to interact with it.
