@@ -29,7 +29,7 @@
 - Results Display Renders a grid of SongItem components for the matched search results.
 - Each SongItem displays relevant information about the song and allows users to interact with it.
 
-# Progress after Day 2
+# Progress after Day 3
 ## Home Page
 ![The Home Page](frontend/screenshots/Day3-HomePage.png)
 
